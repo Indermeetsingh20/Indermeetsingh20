@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="./assets/header.svg" width="100%" alt="Indermeet Singh — Full-Stack Developer" />
+  <img src="./header.svg" width="100%" alt="Indermeet Singh — Full-Stack Developer" />
 </div>
 
 <div align="center">
-  <img src="./assets/avatar.png" width="168" alt="Illustrated avatar of Indermeet Singh" />
+  <img src=".avatar.png" width="168" alt="Illustrated avatar of Indermeet Singh" />
 </div>
 
 <div align="center">
