@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src=".avatar.png" width="168" alt="Illustrated avatar of Indermeet Singh" />
+  <img src="./avatar.png" width="168" alt="Illustrated avatar of Indermeet Singh" />
 </div>
 
 <div align="center">
