@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Indermeet Singh — Full-Stack Developer</title>
+  <desc id="desc">Animated dark developer banner with cyan and violet accents.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050816"/>
+      <stop offset="0.55" stop-color="#0b1224"/>
+      <stop offset="1" stop-color="#11102c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.52" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <radialGradient id="glowCyan">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity=".30"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowViolet">
+      <stop offset="0" stop-color="#a78bfa" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#7dd3fc" stroke-opacity=".055"/>
+    </pattern>
+    <style>
+      .orbit { stroke-dasharray: 18 14; animation: dash 12s linear infinite; }
+      .orbit.reverse { animation-direction: reverse; animation-duration: 16s; }
+      .pulse { animation: pulse 2.8s ease-in-out infinite; transform-origin: center; }
+      .cursor { animation: blink 1s steps(2,end) infinite; }
+      .float { animation: float 5s ease-in-out infinite; }
+      @keyframes dash { to { stroke-dashoffset: -320; } }
+      @keyframes pulse { 0%,100% { opacity:.45; } 50% { opacity:1; } }
+      @keyframes blink { 50% { opacity:0; } }
+      @keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-7px); } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="28" fill="url(#grid)"/>
+  <circle cx="118" cy="86" r="260" fill="url(#glowCyan)"/>
+  <circle cx="1090" cy="310" r="300" fill="url(#glowViolet)"/>
+
+  <g fill="none" stroke="url(#accent)" stroke-opacity=".52">
+    <ellipse class="orbit" cx="995" cy="178" rx="142" ry="142"/>
+    <ellipse class="orbit reverse" cx="995" cy="178" rx="108" ry="108"/>
+  </g>
+  <g transform="translate(882 78)">
+    <g class="float">
+      <rect width="226" height="196" rx="20" fill="#080d1b" stroke="#334155"/>
+      <circle cx="22" cy="22" r="5" fill="#fb7185"/>
+      <circle cx="40" cy="22" r="5" fill="#fbbf24"/>
+      <circle cx="58" cy="22" r="5" fill="#34d399"/>
+      <path d="M35 74l28 24-28 24M78 123h43" fill="none" stroke="#22d3ee" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#softGlow)"/>
+      <path d="M145 71h45M145 95h30M145 119h50M35 154h155" stroke="#a78bfa" stroke-width="5" stroke-linecap="round" opacity=".75"/>
+    </g>
+  </g>
+
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+    <text x="76" y="78" fill="#7dd3fc" font-size="18" font-weight="700" letter-spacing="4">HELLO, I BUILD SYSTEMS</text>
+    <text x="72" y="158" fill="#f8fafc" font-size="62" font-weight="800" letter-spacing="-2">INDERMEET SINGH</text>
+    <rect x="74" y="184" width="550" height="4" rx="2" fill="url(#accent)"/>
+    <text x="76" y="238" fill="#cbd5e1" font-size="27" font-weight="600">Full-Stack Developer</text>
+    <text x="76" y="278" fill="#94a3b8" font-size="21">Backend engineering · APIs · Databases · Caching</text>
+    <text x="76" y="322" fill="#22d3ee" font-size="18" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">$ ship reliable software</text>
+    <rect class="cursor pulse" x="330" y="304" width="11" height="22" rx="2" fill="#a78bfa"/>
+  </g>
+
+  <rect x="1" y="1" width="1198" height="358" rx="27" fill="none" stroke="url(#accent)" stroke-opacity=".35" stroke-width="2"/>
+</svg>
